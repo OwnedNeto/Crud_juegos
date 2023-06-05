@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F3A2561-2223-457A-B19D-55DD3FDEB8D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Crud_juegos</RootNamespace>
+    <AssemblyName>Crud_juegos</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="añadir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="añadir.Designer.cs">
+      <DependentUpon>añadir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editar.Designer.cs">
+      <DependentUpon>editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eliminar.Designer.cs">
+      <DependentUpon>eliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="añadir.resx">
+      <DependentUpon>añadir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editar.resx">
+      <DependentUpon>editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eliminar.resx">
+      <DependentUpon>eliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cute-lilac-simple-horizontal-gradient-background-image_729224.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Steam_2016_logo_black.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3782.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-steam-logo-icon-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\89656-and-icons-circle-computer-black-white-steam-thumb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sdfsdf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Epic_Games_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xbox_logo_%282019%29.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Origin-Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-gris.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3875.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38751.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop-wallpaper-solid-dark-grey-black-and-grey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_236462489_HerRJnm9bDxZooXdCeubMQLFWmLgfYCm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spotify_logo_with_text.svg.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
